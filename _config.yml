@@ -17,8 +17,8 @@ author:
   twitter: # twitter username without the @ symbol
 social:
   name: Terminal Network
-  # links:
-  #   - https://
+  links:
+    - https://twitter.com/terminalnetwork
 
 # -----
 # Build
