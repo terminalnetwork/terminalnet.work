@@ -7,7 +7,7 @@ social:
     url: https://mastodon.art/@sakrecoer
   - name:
     url:
-image: /images/pic01.jpg
+image: /images/2018-08-26-the-road-not-taken.jpg
 blurb: >-
         Superduper Amazing mega cool
 

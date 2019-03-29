@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Major';
+    src: url('/assets/fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf');
+}
+@font-face {
+    font-family: 'Nanum';
+    src: url('/assets/fonts/Nanum_Gothic_Coding/NanumGothicCoding-Regular.ttf');
+    font-weight: normal;
+}
+/* @font-face {
+    font-family: 'NanumB';
+    src: url('/assets/fonts/Nanum_Gothic_Coding/NanumGothicCoding-Bold.ttf');
+    font-weight: bold;
+} */
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-family: 'Nanum', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: rgb(29, 0, 29);
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+#wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+/* HEADER */
+#header {
+  height: 100%;
+  flex: 0 1 50%;
+  margin: 0px;
+  padding: 0px;
+  position: sticky;
+  top: 0px;
+  align-self: center;
+  background-image:url(/images/giphy.gif); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background: linear-gradient(262deg, #02ff00, #018a00);
+  background-size: 400% 400%;
+  
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 60%}
+      50%{background-position:100% 41%}
+      100%{background-position:0% 60%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 60%}
+      50%{background-position:100% 41%}
+      100%{background-position:0% 60%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:0% 60%}
+      50%{background-position:100% 41%}
+      100%{background-position:0% 60%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 60%}
+      50%{background-position:100% 41%}
+      100%{background-position:0% 60%}
+  }
+  
+}
+#header h1 {
+  font-size: 4em;
+  font-family: 'Major', Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+ 
+  background-image: linear-gradient(to right, rgb(5, 143, 39), rgb(117, 206, 0));
+
+}
+
+
+#content {
+  background-color: hsl(180, 100%, 50%);
+  flex: 1 1 359px;
+
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.terminalnode {
+  position: relative;
+  top:0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 719px) {
+  #header h1 {
+  font-size: 2em;
+  }
+  #header {
+    flex: 0 1 100%;
+  
+  }
+  #content {
+    background-color: hsl(180, 100%, 100%);
+    flex: 0 1 100%;
+
+  }
+}
