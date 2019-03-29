@@ -40,12 +40,15 @@ exclude:
   - LICENCE
 
 collections:
-  staff_members:
-    _hide_content: true
+  members:
+
+    output: true
+    layout: default
   # foretag:
   #   output: true
   #   permalink: 
   #   layout: 
+  #   _hide_content: false
 
 
 

@@ -1,4 +1,110 @@
 ---
+title: The Last Network You'll Need
 layout: default
 ---
-<h1>Say hello to Terminal Network, World!</h1>
+
+<style>
+
+@font-face {
+    font-family: 'Major';
+    src: url('/assets/fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf');
+}
+@font-face {
+    font-family: 'Nanum';
+    src: url('/assets/fonts/Nanum_Gothic_Coding/NanumGothicCoding-Regular.ttf');
+    font-weight: normal;
+}
+/* @font-face {
+    font-family: 'NanumB';
+    src: url('/assets/fonts/Nanum_Gothic_Coding/NanumGothicCoding-Bold.ttf');
+    font-weight: bold;
+} */
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-family: 'Nanum', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  background-color: rgb(29, 0, 29);
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+#wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+/* HEADER */
+#header {
+  background-color: rgb(0, 255, 106);
+  flex: 0 1 50%;
+  min-width: 512px;
+  margin: 0px;
+  padding: 0px;
+  position: sticky;
+  top: 0px;
+  align-self: center;
+}
+#header h1 {
+  font-size: 4em;
+  font-family: 'Major', Arial, Helvetica, sans-serif;
+
+}
+
+@media only screen and (max-width: 421px) {
+  #header h1 {
+  font-size: 2em;
+  }
+}
+
+#content {
+  background-color: hsl(180, 100%, 50%);
+  flex: 0 1 50%;
+  min-width: 512px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.terminalnode {
+  flex: 1 1 400px;
+  position: relative;
+  top:0;
+  left: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-width: 300px;
+}
+pr {
+  
+}
+</style>
+
+<div id="header">
+
+  <h1>{{ site.title }}</h1>
+  <h2>{{ page.title }}</h2>
+
+</div>
+
+  <div id="content">
+    {% for member in site.members %}
+    <div style="background-image:url({{ member.image }});" class="terminalnode">
+    
+      <h3>{{ member.name }}</h3>
+      <p>{{ member.blurb }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
