@@ -1,2 +1,2 @@
 # terminalnet.work
-Mother Web of The Terminal Network
+The Terminal Network
