@@ -1,0 +1,68 @@
+# ----
+# Site
+
+title: Terminal Network
+url: "https://terminalnet.work"
+baseurl:
+# google_analytics_key:
+# google_maps_javascript_api_key:
+# disqus_shortname:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: 'Defenders of small businesses'
+author:
+  name: 
+  email: us@terminalnet.work  
+  twitter: # twitter username without the @ symbol
+social:
+  name: Terminal Network
+  links:
+    - https://twitter.com/terminalnetwork
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+collections:
+  members:
+
+    output: true
+    layout: default
+  # foretag:
+  #   output: true
+  #   permalink: 
+  #   layout: 
+  #   _hide_content: false
+
+
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+# sass:
+#     sass_dir: /assets/sass/
