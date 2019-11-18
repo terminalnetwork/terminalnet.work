@@ -53,7 +53,7 @@
 .cta{
 padding: 20px;
 border-radius: 3px;
-background: linear-gradient(224deg, #00ff00, purple);
+background: linear-gradient(224deg, #00ff00, fushia);
 background-size: 400% 400%;
 -webkit-animation: ctaButton 3s ease infinite;
 -moz-animation: ctaButton 3s ease infinite;
