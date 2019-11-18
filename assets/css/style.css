@@ -34,11 +34,37 @@
   100%{background-position:0% 60%}
 }
 
+@-webkit-keyframes ctaButton {
+  0%{background-position:99% 0%}
+  50%{background-position:2% 100%}
+  100%{background-position:99% 0%}
+}
+@-moz-keyframes ctaButton {
+  0%{background-position:99% 0%}
+  50%{background-position:2% 100%}
+  100%{background-position:99% 0%}
+}
+@keyframes ctaButton {
+  0%{background-position:99% 0%}
+  50%{background-position:2% 100%}
+  100%{background-position:99% 0%}
+}
+
+.cta{
+padding: 20px;
+border-radius: 3px;
+background: linear-gradient(224deg, #00ff00, #ffa000);
+background-size: 400% 400%;
+
+-webkit-animation: ctaButton 3s ease infinite;
+-moz-animation: ctaButton 3s ease infinite;
+animation: ctaButton 3s ease infinite;
+}
 
 
 body{
   margin: 0px;
-  padding: 40px;
+  padding: 0px;
   height: 100%;
   font-family: 'Nanum', Arial, Helvetica, sans-serif;
   font-weight: normal;

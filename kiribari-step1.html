@@ -1,51 +1,68 @@
 ---
 title: are you here?
 ---
-    <style>
-      html,
-      body {
-        height: 100%;
-	      font-familY: "Deja-vu Mono", Monaco, monospace, sans-serif;        
-        background: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image:url('/images/kiribari/kissingcheap.png');
-      }
-      .prompt {
-        font-size: 30vw;
-        color: greenyellow;
-      }
-      .cursor {
-        display: inline-block;
-        animation: pulsate 1.4s ease infinite;
-        transform: translate(0px, -15px) scale(0.8);
-      }
-      a {
-        font-size: 5vw;
-        font-weight: 700;
-      }
-      @keyframes pulsate {
-        0% {
-          opacity: 0.1;
-        }
-        12% {
-          opacity: 0.8;
-        }
-        24% {
-          opacity: 0.1;
-        }
-        36% {
-          opacity: 0.8;
-        }
-        60% {
-          opacity: 0.1;
-        }
-        100% {
-          opacity: 0.1;
-        }
-      }
-    </style>
+<style>
+  html,
+  body {
+    height: 100%;
+    padding: 40px;
 
-	  <div class="prompt">~￥ <span class="cursor">|</span></div><a href="/index3/">Where are you?</a>
+    font-familY: "Deja-vu Mono", Monaco, monospace, sans-serif;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/kiribari/kissingcheap.png');
+    -moz-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9);
+    
+  }
 
+  .prompt {
+    font-size: 30vw;
+    color: greenyellow;
+
+  }
+
+  .cursor {
+    display: inline-block;
+    animation: pulsate 1.4s ease infinite;
+    transform: translate(0px, -15px) scale(0.8);
+  }
+
+  a {
+    font-size: 4vw;
+    font-weight: 700;
+
+  }
+
+  @keyframes pulsate {
+    0% {
+      opacity: 0.1;
+    }
+
+    12% {
+      opacity: 0.8;
+    }
+
+    24% {
+      opacity: 0.1;
+    }
+
+    36% {
+      opacity: 0.8;
+    }
+
+    60% {
+      opacity: 0.1;
+    }
+
+    100% {
+      opacity: 0.1;
+    }
+  }
+</style>
+<div><a class="cta" href="/index3/">Where are you?</a></div>
+<div class="prompt">~µ <span class="cursor">|</span>
+  </div>
