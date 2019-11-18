@@ -13,26 +13,28 @@
     font-weight: bold;
 } */
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes fade-swipe {
   0%{background-position:0% 60%}
   50%{background-position:100% 41%}
   100%{background-position:0% 60%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes fade-swipe {
   0%{background-position:0% 60%}
   50%{background-position:100% 41%}
   100%{background-position:0% 60%}
 }
-@-o-keyframes AnimationName {
+@-o-keyframes fade-swipe {
   0%{background-position:0% 60%}
   50%{background-position:100% 41%}
   100%{background-position:0% 60%}
 }
-@keyframes AnimationName {
+@keyframes fade-swipe {
   0%{background-position:0% 60%}
   50%{background-position:100% 41%}
   100%{background-position:0% 60%}
 }
+
+
 
 body{
   margin: 0px;
@@ -41,12 +43,11 @@ body{
   font-family: 'Nanum', Arial, Helvetica, sans-serif;
   font-weight: normal;
   background: linear-gradient(262deg, #c7ffc7, #cdff57);
-  background-size: 400% 400%;
   
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  -o-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: fade-swipe 60S ease infinite;
+  -moz-animation: fade-swipe 60S ease infinite;
+  -o-animation: fade-swipe 60S ease infinite;
+  animation: fade-swipe 60S ease infinite;
   
 
 }
